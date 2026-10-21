@@ -28,4 +28,4 @@ python3 -m http.server 8000
 then open http://localhost:8000.
 
 ## Publishing
-Works on any static host: GitHub Pages (Settings → Pages → deploy from branch), Netlify (drag-and-drop the folder) or Vercel.
+Live (free) on GitHub Pages: https://rashas82-blip.github.io/general/ — it updates automatically a minute or two after each push to the `claude/magical-gauss-hwibl1` branch.
