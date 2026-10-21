@@ -18,7 +18,7 @@ Header (sticky, mobile menu, light/dark toggle) → Hero → "Breathe with me" e
 - **Services:** each card is a `<button class="service-card">`; its `data-title`, `data-desc`, `data-duration` and `data-price` fill the pop-up.
 - **Prices:** edit the `.price-card` blocks.
 - **Online booking:** replace `https://calendly.com/your-link` with your booking link.
-- **Contact form:** create a free form at [formspree.io](https://formspree.io) and replace `YOUR_FORM_ID` in the form's `action`. Until then the form validates and shows a thank-you message but doesn't send anything.
+- **Contact form:** connected to Formspree form `xgaojraj` (messages go to the email on that Formspree account). To change it, edit the form's `action` in `index.html`.
 - **Colours:** edit `--primary`, `--accent` etc. at the top of `css/styles.css`.
 
 ## Preview locally
