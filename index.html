@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serene Mind Hypnotherapy</title>
+  <meta name="description" content="Clinical hypnotherapy for anxiety, stress, sleep, confidence, quitting smoking and more. Book your free consultation today.">
+
+  <!-- Open Graph (shown when the link is shared on social media) -->
+  <meta property="og:title" content="Serene Mind Hypnotherapy">
+  <meta property="og:description" content="Calm your mind, change your life. Book a free consultation.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Apply saved / system theme before the page paints (avoids a flash)
+    (function () {
+      var root = document.documentElement, saved = null;
+      root.classList.add("js");
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      root.setAttribute("data-theme", saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Serene Mind Hypnotherapy home">
+        <img src="images/logo.png" alt="" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">Serene<span>Mind</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">Free Consultation</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-media img-frame">
+        <img src="images/hero.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Clinical Hypnotherapy · In person &amp; online</p>
+        <h1 class="reveal">Calm your mind.<br><em>Change your life.</em></h1>
+        <p class="hero-sub reveal">Gentle, evidence-based hypnotherapy to help you release anxiety, break old habits and feel like yourself again.</p>
+        <div class="hero-ctas reveal">
+          <a href="#contact" class="btn btn-primary">Book a free consultation</a>
+          <a href="#services" class="btn btn-ghost">Explore services</a>
+        </div>
+      </div>
+      <a href="#breathe" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ BREATHING MOMENT ============ -->
+    <section class="section breathe" id="breathe">
+      <div class="container breathe-inner">
+        <div class="breathe-text reveal">
+          <h2>Take a moment for yourself</h2>
+          <p>Before you read on, try a slow breath with me. Press start and follow the circle — breathe in as it grows, out as it softens.</p>
+          <button class="btn btn-primary" id="breathe-btn">Start breathing</button>
+        </div>
+        <div class="breathe-visual reveal" aria-hidden="true">
+          <div class="breathe-circle" id="breathe-circle">
+            <span id="breathe-label">Ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media img-frame reveal">
+          <img src="images/about.jpg" alt="Portrait of your hypnotherapist" onerror="this.style.display='none'">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">Meet your therapist</p>
+          <h2>Hi, I'm [Your Name]</h2>
+          <p>I'm a qualified clinical hypnotherapist passionate about helping people unlock the calm, confident version of themselves that's already there. My sessions are relaxed, safe and tailored entirely to you.</p>
+          <p>Whether you're struggling with anxiety, want to break a habit, or simply need to sleep better, we'll work together at your pace — with no judgement, only support.</p>
+          <ul class="badges">
+            <li>Dip. Clinical Hypnotherapy</li>
+            <li>Member, [Professional Body]</li>
+            <li>NLP Practitioner</li>
+            <li>Fully insured</li>
+          </ul>
+          <div class="stats">
+            <div class="stat"><span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span><p>Clients helped</p></div>
+            <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span><p>Years experience</p></div>
+            <div class="stat"><span class="stat-num" data-count="95">0</span><span class="stat-plus">%</span><p>Would recommend</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How I can help</p>
+          <h2>Services</h2>
+          <p>Tap any service to learn more.</p>
+        </div>
+        <div class="card-grid">
+          <!-- To add/edit a service: copy a <button class="service-card"> block and update its data-* attributes -->
+          <button class="service-card reveal" data-service="anxiety"
+            data-title="Anxiety &amp; Stress"
+            data-desc="Learn to quieten racing thoughts, calm your body's stress response and feel in control again. We'll uncover what triggers your anxiety and give your subconscious new, calmer patterns."
+            data-duration="60–90 min sessions · usually 3–6 sessions"
+            data-price="From £80 per session">
+            <div class="card-media img-frame"><img src="images/service-anxiety.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Anxiety &amp; Stress</h3><p>Find calm and feel in control again.</p><span class="card-link">Learn more →</span></div>
+          </button>
+
+          <button class="service-card reveal" data-service="smoking"
+            data-title="Quit Smoking &amp; Vaping"
+            data-desc="A powerful single-session programme designed to break the habit at its root, reduce cravings and help you see yourself as a non-smoker — for good."
+            data-duration="One 2-hour session + free support recording"
+            data-price="£250 (includes follow-up)">
+            <div class="card-media img-frame"><img src="images/service-smoking.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Quit Smoking</h3><p>Break free in as little as one session.</p><span class="card-link">Learn more →</span></div>
+          </button>
+
+          <button class="service-card reveal" data-service="weight"
+            data-title="Weight Management"
+            data-desc="Change your relationship with food from the inside out. Hypnotherapy helps reduce emotional eating, cravings and builds motivation for healthy habits that last."
+            data-duration="60 min sessions · usually 4–6 sessions"
+            data-price="From £80 per session">
+            <div class="card-media img-frame"><img src="images/service-weight.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Weight Management</h3><p>Build a healthier relationship with food.</p><span class="card-link">Learn more →</span></div>
+          </button>
+
+          <button class="service-card reveal" data-service="confidence"
+            data-title="Confidence &amp; Self-Esteem"
+            data-desc="Quieten your inner critic and step into your potential — for public speaking, interviews, relationships or everyday life."
+            data-duration="60 min sessions · usually 3–5 sessions"
+            data-price="From £80 per session">
+            <div class="card-media img-frame"><img src="images/service-confidence.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Confidence</h3><p>Believe in yourself and shine.</p><span class="card-link">Learn more →</span></div>
+          </button>
+
+          <button class="service-card reveal" data-service="sleep"
+            data-title="Sleep &amp; Insomnia"
+            data-desc="Retrain your mind to switch off at night. Fall asleep more easily, stay asleep longer and wake feeling refreshed. Includes a personalised sleep recording."
+            data-duration="60 min sessions · usually 3–4 sessions"
+            data-price="From £80 per session">
+            <div class="card-media img-frame"><img src="images/service-sleep.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Sleep &amp; Insomnia</h3><p>Rest deeply and wake refreshed.</p><span class="card-link">Learn more →</span></div>
+          </button>
+
+          <button class="service-card reveal" data-service="phobias"
+            data-title="Fears &amp; Phobias"
+            data-desc="From flying and spiders to needles and driving — gently reduce the fear response so it no longer holds you back."
+            data-duration="60–90 min sessions · usually 1–3 sessions"
+            data-price="From £80 per session">
+            <div class="card-media img-frame"><img src="images/service-phobias.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="card-body"><h3>Fears &amp; Phobias</h3><p>Let go of what holds you back.</p><span class="card-link">Learn more →</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Your journey</p>
+          <h2>How it works</h2>
+          <p>Simple, gentle and always at your pace.</p>
+        </div>
+        <ol class="timeline">
+          <li class="step reveal"><span class="step-num">1</span><div><h3>Free discovery call</h3><p>A relaxed 15-minute chat to talk about what you'd like to change and answer any questions.</p></div></li>
+          <li class="step reveal"><span class="step-num">2</span><div><h3>Personal assessment</h3><p>We explore your goals and history so every session is tailored to you.</p></div></li>
+          <li class="step reveal"><span class="step-num">3</span><div><h3>Hypnotherapy sessions</h3><p>You'll relax deeply while we work with your subconscious to create lasting change. You stay aware and in control throughout.</p></div></li>
+          <li class="step reveal"><span class="step-num">4</span><div><h3>Ongoing support</h3><p>Take-home recordings and follow-up check-ins help your progress stick.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Investment in you</p>
+          <h2>Pricing</h2>
+          <p>Every journey starts with a free consultation — no obligation.</p>
+        </div>
+        <div class="price-grid">
+          <div class="price-card reveal">
+            <h3>Single Session</h3>
+            <p class="price">£80</p>
+            <p class="price-note">60–90 minutes</p>
+            <ul><li>Personal assessment</li><li>Tailored hypnotherapy</li><li>Take-home recording</li></ul>
+            <a href="#contact" class="btn btn-ghost" data-package="Single Session">Book now</a>
+          </div>
+          <div class="price-card featured reveal">
+            <span class="ribbon">Most popular</span>
+            <h3>3-Session Package</h3>
+            <p class="price">£210</p>
+            <p class="price-note">Save £30</p>
+            <ul><li>Everything in Single</li><li>Progress tracking</li><li>Email support between sessions</li></ul>
+            <a href="#contact" class="btn btn-primary" data-package="3-Session Package">Book now</a>
+          </div>
+          <div class="price-card reveal">
+            <h3>Transformation Programme</h3>
+            <p class="price">£380</p>
+            <p class="price-note">6 sessions</p>
+            <ul><li>Everything in 3-Session</li><li>Custom audio library</li><li>Priority booking</li></ul>
+            <a href="#contact" class="btn btn-ghost" data-package="Transformation Programme">Book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2>What clients say</h2>
+        </div>
+        <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Client testimonials">
+          <div class="carousel-track" id="carousel-track">
+            <figure class="slide" aria-roledescription="slide">
+              <div class="avatar img-frame"><img src="images/testimonial-1.jpg" alt="" onerror="this.style.display='none'"></div>
+              <blockquote>"I'd suffered with anxiety for years. After just three sessions I feel like a different person — calmer, lighter and finally sleeping well."</blockquote>
+              <figcaption>— Sarah M., Anxiety</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide">
+              <div class="avatar img-frame"><img src="images/testimonial-2.jpg" alt="" onerror="this.style.display='none'"></div>
+              <blockquote>"Twenty years a smoker and I haven't touched one since my session. I honestly didn't think it would work. Thank you!"</blockquote>
+              <figcaption>— James T., Quit Smoking</figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide">
+              <div class="avatar img-frame"><img src="images/testimonial-3.jpg" alt="" onerror="this.style.display='none'"></div>
+              <blockquote>"I gave a presentation to 200 people last week without shaking. The confidence work changed everything for my career."</blockquote>
+              <figcaption>— Priya K., Confidence</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous testimonial">‹</button>
+          <button class="carousel-btn next" id="carousel-next" aria-label="Next testimonial">›</button>
+          <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Choose testimonial"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked</h2>
+        </div>
+        <div class="accordion">
+          <div class="acc-item reveal">
+            <button class="acc-btn" aria-expanded="false">Will I lose control or be made to do something?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><p>No. Hypnosis is a natural, focused state of relaxation — like being absorbed in a good book. You're aware of everything and can't be made to do anything against your values.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <button class="acc-btn" aria-expanded="false">Is hypnotherapy safe?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><p>Yes. Clinical hypnotherapy is a safe, gentle and non-invasive therapy. During your consultation we'll check it's suitable for you.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <button class="acc-btn" aria-expanded="false">What if I can't be hypnotised?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><p>Almost everyone can experience hypnosis. If you can daydream, you can be hypnotised. I'll guide you at a pace that feels comfortable.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <button class="acc-btn" aria-expanded="false">Do you offer online sessions?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><p>Yes — online sessions via Zoom are just as effective as in person, and you can relax in the comfort of your own home.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <button class="acc-btn" aria-expanded="false">How many sessions will I need?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><p>It depends on your goal. Some issues (like quitting smoking) can take a single session; others typically take 3–6. We'll agree a plan together at your consultation.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING & CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Book your free consultation</h2>
+          <p>Take the first step today. Choose a time that suits you, or send me a message and I'll get back to you within 24 hours.</p>
+          <!-- Replace the href with your Calendly / booking link -->
+          <a href="https://calendly.com/your-link" target="_blank" rel="noopener" class="btn btn-primary">Pick a time online</a>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:+440000000000">+44 0000 000000</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></li>
+            <li><strong>Location:</strong> [Your clinic address] · or online</li>
+            <li><strong>Hours:</strong> Mon–Fri 9am–7pm · Sat 10am–2pm</li>
+          </ul>
+        </div>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree ID (formspree.io) to receive messages by email -->
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <small class="error-msg">Please enter your name.</small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error-msg">Please enter a valid email.</small>
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service…</option>
+              <option>Anxiety &amp; Stress</option>
+              <option>Quit Smoking &amp; Vaping</option>
+              <option>Weight Management</option>
+              <option>Confidence &amp; Self-Esteem</option>
+              <option>Sleep &amp; Insomnia</option>
+              <option>Fears &amp; Phobias</option>
+              <option>Something else</option>
+            </select>
+            <small class="error-msg">Please choose an option.</small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small class="error-msg">Please write a short message.</small>
+          </div>
+          <input type="hidden" name="package" id="package">
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-success" id="form-success" role="status" hidden>Thank you! Your message has been sent — I'll be in touch within 24 hours. 🌿</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="logo-text">Serene<span>Mind</span></span>
+        <p>Clinical hypnotherapy in [Your Town] and online.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M10 9h4v2a4 4 0 0 1 7 3v7h-4v-6a2 2 0 0 0-4 0v6h-3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+440000000000">+44 0000 000000</a></li><li><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></li><li>Mon–Fri 9am–7pm</li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">Hypnotherapy is a complementary therapy and is not a substitute for medical advice or treatment. Results vary from person to person.</p>
+      <p>© <span id="year"></span> Serene Mind Hypnotherapy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+
+  <!-- Service modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p class="modal-meta" id="modal-duration"></p>
+      <p class="modal-price" id="modal-price"></p>
+      <a href="#contact" class="btn btn-primary" id="modal-book">Book this service</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
